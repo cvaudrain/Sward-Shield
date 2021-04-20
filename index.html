@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sward and Shield Home</title>
+<!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Stylesheet -->
+<link rel="stylesheet" href = "styles.css" />
+
+<!-- Fonts: -->
+<!-- font-family: 'Amatic SC', cursive; -->
+<!--MAIN font-family: 'Signika', sans-serif; -->
+<!--SUB font-family: 'Poiret One', cursive; -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- favicon -->
+
+<!--icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+<!-- Bootstrap JS -->
+  </head>
+
+  <body class = "container-fluid no-animate">
+
+ <!--Main Section-->
+ <header id = "heading-bar" class = "container-fluid">
+   <p id = "heading heading-home">
+     Sward & Shield <br />
+     <p id="header-sub">Fitness and Nutrition
+   </p>
+
+ </header>
+
+ <main class="container-fluid">
+
+
+ <!-- COLLAPSE Button Div will disappear on click, THEN after 0.5 sec delay the collapse will run-->
+ <div class = "container-fluid" id = "collapse-div">
+
+ <button class = "btn btn-outline-secondary btn-home hvr-bob">
+
+Meet Your New Trainer
+</button>
+</div>
+ <div class = "collapser inviso">
+   <!-- <div class="shadow-div">
+
+   </div> -->
+   <!-- <div class = "collapse" id=demo> -->
+ <div class = "main container-fluid">
+   <nav class="navbar navbar-expand-lg navbar-dark nav-all nav-home justify-content-right">
+
+        <button id="toggler-home" class="navbar-toggler toggler-all" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse item-pad" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+             <a class="nav-link" href="about.html">About</a>
+          </li>
+            <li class="nav-item">
+             <a class="nav-link" href="training.html">Training</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="nutrition.html">Nutrition</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="booking">Booking</a>
+          </li>
+
+
+        </ul>
+        </div>
+    </nav>
+
+     <div class = "container-fluid" >
+       <!-- <span>
+       <p id="Headline">
+         Personal Training &<br /> Nutrition Counseling
+       </p>
+     </span> -->
+       <!-- MARGIN-ISSUE: bmenu had relatve positioning which gave a right margin. so that was removed. -->
+       <ul class="bmenu">
+   	<li><a class = "navs" href="about.html">About</a></li>
+   	<li><a class = "navs" href="training.html">Training</a></li>
+   	<li><a class = "navs" href="nutrition.html">Nutrition</a></li>
+
+   	<li><a class = "navs" href="booking.html">Book Now</a></li>
+   </ul>
+
+     </div>
+
+
+</div>
+<div class = "divider">
+
+</div>
+
+
+<div class="container-fluid">
+  <div class = "last">
+  <!-- <div class = "container-fluid meet">
+
+  </div> -->
+  <p class = "meet-your inviso">
+  Let's Get <span class="green hvr-wobble-top">
+  Moving</span>
+  </p>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="col-12 container-fluid virtual-div text-center text-white overflow-hidden card-div">
+
+      <!-- <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> -->
+          <div class = "container-fluid train-img-index trainers">
+            <button type="button" class="btn btn-outline-light fade-btn-1 index-btn-1 hvr-grow">Personal Training</button>
+          </div>
+
+          <div class="train-img-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
+<div class="absolute">
+<div class="med-div row">
+<p class="med-heading">Train Anywhere. Train Your Way.</p>
+<p class="med-text">Bespoke training plans designed to suit your precise needs. Work together with Caitlyn to to fine-tune a safe, effective and fun program.</p>
+
+</div>
+<a class="btn btn-outline-secondary mouseover-btn-plus hvr-rectangle-out" href="training.html">Explore</a>
+</div>
+          </div>
+</div>
+    </div>
+    <!-- Caitlyn Portrait Bar -->
+
+    <div class = "row feature-row container-fluid">
+
+    <div class = "col-xl-8 col-lg-8 col-md-12 col-sm-12"> <!--quote-->
+    <p id="caitlyn-quote">
+    It's your journey. I'll help you find the way <br />on your terms.
+    </p>
+    <p id="sig">
+      ~Caitlyn Sward
+    </p>
+    </div>
+    <div class = "col-xl-4 col-lg-4 col-md-12 col-sm-12"> <!--image-->
+
+    <img id = "caitlyn-portrait" src="images/caitlyn-portrait.jpg" />
+    </div>
+    </div>
+
+    <!-- END Row -->
+    <div class="col-12 container-fluid virtual-div text-center overflow-hidden card-div">
+
+      <div class = "container-fluid nutrition-img-index ">
+<button type="button" class="btn btn-outline-light fade-btn-2 index-btn-2 hvr-grow ">Nutrition Counseling</button>
+      </div>
+      <div class="virtual-img-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
+<div class="absolute">
+<div class="med-div row">
+  <p class="med-heading">Food is More than Fuel.</p>
+  <p class="med-text">Personalized nutrition plans built on health, enjoyment, flexibility and personal freedom.</p>
+</div>
+
+        <a class="btn btn-outline-secondary mouseover-btn-plus hvr-rectangle-out" href="nutrition.html">Explore</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Credentials -->
+<div id="credentials" class="container-fluid">
+  <div id="superior" class="row">
+    <p>Superior Accreditation</p>
+    <p id="no-guesswork">
+      Eliminate the guesswork with the best-respected allied-health credentials.
+    </p>
+  </div>
+  <div id="certified-by" class="row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+    <a href="https://www.acefitness.org/about-ace/" target="_blank"><img class="credit-img hvr-bob" src="images/ace.png" /></a>
+      <p class = "credit-text">Certified Personal Trainer</p>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" >
+      <a href="https://www.cdrnet.org/" target="_blank"><img class="credit-img hvr-bob"src="images/acend.png" /></a>
+      <p class = "credit-text">Registered Dietitian</p>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+      <a href="https://www.nasm.org/about-nasm" target="_blank"><img class="credit-img hvr-bob" src="images/nasm.png"/></a>
+      <p class = "credit-text">Certified MMA Conditioning Specialist</p>
+    </div>
+
+</div>
+</div>
+
+
+  <div class="col-12 container-fluid virtual-div text-center text-white overflow-hidden card-div">
+
+    <!-- <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> -->
+        <div id="Get-started-img"class = " trainers">
+          <button type="button" class="btn btn-outline-light fade-btn-3 index-btn-1 hvr-grow">Let's Get Started</button>
+        </div>
+
+        <div class="get-started-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
+<!-- <div class="absolute"> -->
+<div class="row">
+  <div class="col-12">
+  <p class="med-heading center glowtext pad-top">Take The First Step</p>
+  </div>
+  </div>
+
+  <div class="row">
+  <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+<a class="btn btn-outline-secondary mouseover-btn wt  hvr-grow " href="training.html">Explore Training</a>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+<a id="mouseover-book-btn" class="btn btn-outline-secondary mouseover-btn hvr-grow " href="booking">First Session</a>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+<a class="btn btn-outline-secondary mouseover-btn wt hvr-grow " href="training.html">Explore Nutrition</a>
+</div>
+</div>
+        <!-- </div> -->
+</div>
+<!-- <div id="social"> -->
+<div id="question-div" class="center">
+<form class = "" action = "https://formsubmit.co/8f391e6158e68b2f56ce64cf531e3f50" method = "post">
+
+    <p id="Question">
+     Have a Question?
+   </p>
+   <p class = "form-intro">
+     Go for it!
+   </p>
+   <div class="row g-4 p-2 form-row">
+   <div class="col-12">
+   <div class="form-floating ">
+<input type = "text" class="form-control" id="floatingInputValue" rows="8" name = "name" placeholder="Name"value = "Name" required = "required"></textarea>
+<input type = "email" class="form-control" id="floatingInputValue" rows="8" name = "email" placeholder="Email"value = "Email" required = "required"></textarea>
+     <input type = "textearea" class="form-control" id="floatingInputValue" rows="8" name = "message" placeholder="Your Message"value = "I was wondering..." required = "required"></textarea>
+
+     <label for="floatingInputGrid"></label>
+   </div>
+   </div>
+
+   </div>
+   <button type = "submit" class = "btn btn-success btn-submit hvr-bob">Send</button>
+</form>
+
+<!-- <a href="https://www.instagram.com/swardandshieldfit/"><i class="fab fa-1xl fa-instagram-square icons"></i></a> -->
+<!-- <i class="fab fa-1xl  fa-facebook icons"></i> -->
+</div>
+<div class="checkout container-fluid">
+<p class="glowtext">... <i>While You're Here</i></p>
+</div>
+<div id="social">
+
+<a href="https://www.instagram.com/swardandshieldfit/" target="_blank"><i class="fab fa-5x fa-instagram  hvr-float"></i></i></a>
+<p >
+<strong>Checkout The Sward & Shield Instagram.</strong>
+</p>
+</div>
+<footer class = "">
+<p>
+  2021
+</p>
+<p>
+  Sward and Shield LLC
+</p>
+</footer>
+</main>
+
+
+<!-- </div> end social -->
+<!-- </div> -->
+</div>
+
+
+
+<!-- Scripts -->
+<!-- Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "index.js"></script>
+
+
+  </body>
+</html>
