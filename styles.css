@@ -1054,7 +1054,7 @@ border-bottom: 1px solid black;
 @media(max-width: 950px){
   .train-main{
     padding-bottom: 280px;
-    background-image: url("images/train-track-mobile.jpg") ;
+    background-image: url("images/landscape-mobile-alt.jpg") ;
   }
 }
 @media(max-width: 756px){
