@@ -1,23 +1,41 @@
-//Navbar DOM
-// $(".navbar-item").hover(function(){
-//   this.addClass(".hvr-grow");
-//
-// })
+$(document).ready(function(){
 
-//Remove scroll for home, and just make the event load instead of click button.
+//Button - setTimeout vs click event on load
 // Index DOM Control
+$(window).resize(function(){
+  if($(window).width()<=576){
+$(".bmenu").fadeOut("fast")
+}
+})
+$(window).resize(function(){
+  if($(window).width()>576){
+$(".bmenu").fadeIn("fast")
+}
+})
+
 $(".btn-outline-secondary").click(function(){
 
   $("#collapse-div").fadeOut("slow",function(){
+    $(".meet-your-slider").fadeIn("fast") //added slider event
+    setTimeout(function(){
+    $(".meet-your-slider").animate({
+      paddingTop:"100vh",
+      opacity:"0",
+      display:"none"
+    },"slow")
+  },800)
+  setTimeout(function(){
+    if($(window).width()>576){
+  $(".bmenu").fadeIn("slow")
+}
+},1500)
+//END Slider Add-on
     $(".collapser").fadeIn("slow",function(){
 
       $(".meet-your").fadeIn("slow",function(){
 
         $(".last").fadeIn("slow", function(){
 
-          $([document.documentElement, document.body]).animate({
-        scrollTop: $(".meet-your").offset().top
-        })
         setTimeout(function(){
           $(".navbar").removeClass("inviso")
         },3000)
@@ -98,23 +116,9 @@ setTimeout(function(){
 
         })
       });
-
     });
   })
-
-
 })
-
-
-
-
-//Home-return
-// $(document).load(function{
-//   if($("body").hasClass("home-return")){
-//     $(".last").fadeIn("slow");
-//   }
-// })
-
 
 // Booking DOM control
 $(".btn-next").click(function(){
@@ -146,12 +150,8 @@ $(".btn-next").delay("300").fadeIn("slow");
 }
 })
 
-// Form Navigation Complete. 300ms is perfect delay time
+// Form Navigation Complete.
 
-// Script conditions for valid form completion when setting up submit button with mailchimp. Probably just make the post request conditional on the form being valid.
-
-// NEST FUNCTIONS so they don't trip over each other!!
-// Train/Nutrition (clone) DOM Control
 // hover for description in person
 $(".fade-btn-1").click(function(){
   // $("body").stop(true,true);
@@ -164,7 +164,6 @@ $(".fade-btn-1").click(function(){
 
 
 $(".train-img-mouseover").mouseleave(function(){
-  // $("body").stop(true,true);
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
     $(".train-img-index,.train-img").fadeIn("fast")
@@ -181,7 +180,6 @@ $(".virtual-img").promise().done(function(){
 })
 }) ;
 
-
 $(".virtual-img-mouseover").mouseleave(function(){
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
@@ -190,8 +188,6 @@ $(".virtual-img-mouseover").mouseleave(function(){
 })
 })
 
-
-//
 $(".fade-btn-2").click(function(){
 $(".nutrition-img-index").promise().done(function(){
   $(this).fadeOut(/*"fast",*/ function(){
@@ -208,7 +204,6 @@ $(".virtual-img-mouseover").mouseleave(function(){
 })
 
 $(".fade-btn-3").click(function(){
-  // $("body").stop(true,true);
   $("#Get-started-img").promise().done(function(){
   $(this).fadeOut( function(){
     $(".get-started-mouseover").fadeIn()
@@ -216,9 +211,7 @@ $(".fade-btn-3").click(function(){
 })
 }) ;
 
-
 $(".get-started-mouseover").mouseleave(function(){
-  // $("body").stop(true,true);
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
     $("#Get-started-img").fadeIn("fast")
@@ -235,13 +228,8 @@ $(".credit-img").mouseleave(function(){
   $(this).removeClass("glowy")
 })
 
-
-
-
-
 //About Page D O M
 $(".about-btn-1").click(function(){
-  // $("body").stop(true,true);
   $(".about-div-1").promise().done(function(){
   $(this).fadeOut( function(){
     $(".mouseover-1").fadeIn()
@@ -249,9 +237,7 @@ $(".about-btn-1").click(function(){
 })
 }) ;
 
-
 $(".mouseover-1").mouseleave(function(){
-  // $("body").stop(true,true);
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
     $(".about-div-1").fadeIn("fast")
@@ -268,7 +254,6 @@ $(".about-div-2").promise().done(function(){
 })
 }) ;
 
-
 $(".mouseover-2").mouseleave(function(){
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
@@ -277,10 +262,8 @@ $(".mouseover-2").mouseleave(function(){
 })
 })
 
-
 //
 $(".about-btn-3").click(function(){
-  // $("body").stop(true,true);
   $(".about-div-3").promise().done(function(){
   $(this).fadeOut( function(){
     $(".mouseover-3").fadeIn()
@@ -288,9 +271,7 @@ $(".about-btn-3").click(function(){
 })
 }) ;
 
-
 $(".mouseover-3").mouseleave(function(){
-  // $("body").stop(true,true);
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
     $(".about-div-3").fadeIn("fast")
@@ -299,7 +280,6 @@ $(".mouseover-3").mouseleave(function(){
 });
 
 $(".about-btn-4").click(function(){
-  // $("body").stop(true,true);
   $(".about-div-4").promise().done(function(){
   $(this).fadeOut( function(){
     $(".mouseover-4").fadeIn()
@@ -309,7 +289,6 @@ $(".about-btn-4").click(function(){
 
 
 $(".mouseover-4").mouseleave(function(){
-  // $("body").stop(true,true);
   $(this).promise().done(function(){
   $(this).fadeOut("fast", function(){
     $(".about-div-4").fadeIn("fast")
@@ -317,4 +296,6 @@ $(".mouseover-4").mouseleave(function(){
 })
 });
 
-//Price booking
+
+})
+// End Wrap- document ready
