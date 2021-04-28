@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Success</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sward and Shield Fitness Home. Personal Training & Nutrition Counseling by Caitlyn Sward." />
+    <title>Signup Success</title>
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Stylesheet -->
@@ -76,13 +78,40 @@
             <div class="train-main">
               <p class="train-title">Uh Oh!</p>
               <p class="train-sub">Something went wrong in cyberspace just now. Let's give that another shot.</p>
+              <p class="train-sub">(If you already submitted a booking request, but have a different question, use the contact form below instead!)</p>
 
               <a class="btn btn-outline-secondary btn-book-macro hvr-rectangle-out" href="booking.html">Retry</a>
             </div>
             <!-- <div class="product-device box-shadow d-none d-md-block"></div>
             <div class="product-device product-device-2 box-shadow d-none d-md-block"></div> -->
           </div>
+          <div id="question-div" class="center">
+          <form class = "" action = "https://formsubmit.co/8f391e6158e68b2f56ce64cf531e3f50" method = "post">
 
+              <p id="Question">
+               Have a Different Question?
+             </p>
+             <p class = "form-intro">
+               Let us know!
+             </p>
+             <div class="row g-4 p-2 form-row">
+             <div class="col-12">
+             <div class="form-floating ">
+          <input type = "text" class="form-control" id="floatingInputValue" rows="8" name = "name" placeholder="Name" required = "required"></input>
+          <input type = "email" class="form-control" id="floatingInputValue" rows="8" name = "email" placeholder="Email" required = "required"></input>
+               <input type = "textearea" class="form-control" id="floatingInputValue" rows="8" name = "message" placeholder="Your Message" required = "required"></input>
+
+               <label for="floatingInputGrid"></label>
+             </div>
+             </div>
+
+             </div>
+             <button type = "submit" class = "btn btn-success btn-submit hvr-bob">Send</button>
+          </form>
+
+          <!-- <a href="https://www.instagram.com/swardandshieldfit/"><i class="fab fa-1xl fa-instagram-square icons"></i></a> -->
+          <!-- <i class="fab fa-1xl  fa-facebook icons"></i> -->
+          </div>
 
 </main>
         <footer>
@@ -90,7 +119,7 @@
           2021
         </p>
         <p>
-          Enso Fitness
+          Sward and Shield LLC
         </p>
         </footer>
         <!-- Scripts -->

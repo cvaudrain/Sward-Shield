@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Sward and Shield Home</title>
+    <meta charset="utf-8" rel="canonical">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sward and Shield Fitness Home. Personal Training & Nutrition Counseling by Caitlyn Sward. CT/Connecticut" />
+    <title>Sward and Shield-Home</title>
 <!-- Bootstrap CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <!-- Stylesheet -->
@@ -19,17 +21,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <!-- favicon -->
-
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 <!--icons -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 <!-- Bootstrap JS -->
   </head>
 
-  <body class = "container-fluid no-animate">
+  <body class = "container-fluid">
 
  <!--Main Section-->
  <header id = "heading-bar" class = "container-fluid">
-   <p id = "heading heading-home">
+   <p id = "">
      Sward & Shield <br />
      <p id="header-sub">Fitness and Nutrition
    </p>
@@ -88,7 +93,8 @@ Meet Your New Trainer
        </p>
      </span> -->
        <!-- MARGIN-ISSUE: bmenu had relatve positioning which gave a right margin. so that was removed. -->
-       <ul class="bmenu">
+
+       <ul class="bmenu inviso">
    	<li><a class = "navs" href="about.html">About</a></li>
    	<li><a class = "navs" href="training.html">Training</a></li>
    	<li><a class = "navs" href="nutrition.html">Nutrition</a></li>
@@ -97,13 +103,14 @@ Meet Your New Trainer
    </ul>
 
      </div>
-
+     <p class="meet-your-slider">
+       Let's Get <br />Moving
+     </p>
 
 </div>
 <div class = "divider">
 
 </div>
-
 
 <div class="container-fluid">
   <div class = "last">
@@ -111,15 +118,14 @@ Meet Your New Trainer
 
   </div> -->
   <p class = "meet-your inviso">
-  Let's Get <span class="green hvr-wobble-top">
+  Let's Get <br /><span class="green hvr-wobble-top">
   Moving</span>
   </p>
   </div>
 
   <div class="container-fluid">
-
-    <div class="col-12 container-fluid virtual-div text-center text-white overflow-hidden card-div">
-
+<div id="no-margin-row"class="row">
+    <div class="col-12 container-fluid virtual-div text-center overflow-hidden text-white card-div">
       <!-- <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> -->
           <div class = "container-fluid train-img-index trainers">
             <button type="button" class="btn btn-outline-light fade-btn-1 index-btn-1 hvr-grow">Personal Training</button>
@@ -127,7 +133,7 @@ Meet Your New Trainer
 
           <div class="train-img-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
 <div class="absolute">
-<div class="med-div row">
+<div id="no-margin-row" class="med-div row">
 <p class="med-heading">Train Anywhere. Train Your Way.</p>
 <p class="med-text">Bespoke training plans designed to suit your precise needs. Work together with Caitlyn to to fine-tune a safe, effective and fun program.</p>
 
@@ -136,53 +142,54 @@ Meet Your New Trainer
 </div>
           </div>
 </div>
+</div>
     </div>
     <!-- Caitlyn Portrait Bar -->
+    <div class="container-fluid">
 
-    <div class = "row feature-row container-fluid">
+
+    <div id="no-margin-row"class = "row feature-row ">
 
     <div class = "col-xl-8 col-lg-8 col-md-12 col-sm-12"> <!--quote-->
     <p id="caitlyn-quote">
     It's your journey. I'll help you find the way <br />on your terms.
     </p>
-    <p id="sig">
-      ~Caitlyn Sward
-    </p>
+    <p id="sig">~Caitlyn Sward</p>
     </div>
     <div class = "col-xl-4 col-lg-4 col-md-12 col-sm-12"> <!--image-->
-
     <img id = "caitlyn-portrait" src="images/caitlyn-portrait.jpg" />
     </div>
     </div>
-
+</div>
     <!-- END Row -->
-    <div class="col-12 container-fluid virtual-div text-center overflow-hidden card-div">
+    <div class="row" id="no-margin-row">
+    <div class="col-12 container-fluid virtual-div text-center overflow-hidden text-white card-div">
 
       <div class = "container-fluid nutrition-img-index ">
-<button type="button" class="btn btn-outline-light fade-btn-2 index-btn-2 hvr-grow ">Nutrition Counseling</button>
+<button type="button" class="btn btn-outline-light fade-btn-2 index-btn-2 hvr-grow">Nutrition Counseling</button>
       </div>
       <div class="virtual-img-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
 <div class="absolute">
-<div class="med-div row">
+<div id="no-margin-row" class="med-div row no-margin-row">
   <p class="med-heading">Food is More than Fuel.</p>
   <p class="med-text">Personalized nutrition plans built on health, enjoyment, flexibility and personal freedom.</p>
 </div>
-
-        <a class="btn btn-outline-secondary mouseover-btn-plus hvr-rectangle-out" href="nutrition.html">Explore</a>
+<a class="btn btn-outline-secondary mouseover-btn-plus hvr-rectangle-out" href="nutrition.html">Explore</a>
       </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Credentials -->
 <div id="credentials" class="container-fluid">
-  <div id="superior" class="row">
-    <p>Superior Accreditation</p>
+  <div id="no-margin-row superior" class="row">
+    <p class="med-heading">Superior Accreditation</p>
     <p id="no-guesswork">
       Eliminate the guesswork with the best-respected allied-health credentials.
     </p>
   </div>
-  <div id="certified-by" class="row">
+  <div id="certified-by no-margin-row" class="row">
     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
     <a href="https://www.acefitness.org/about-ace/" target="_blank"><img class="credit-img hvr-bob" src="images/ace.png" /></a>
       <p class = "credit-text">Certified Personal Trainer</p>
@@ -209,13 +216,13 @@ Meet Your New Trainer
 
         <div class="get-started-mouseover inviso"> <!-- NOTE This div is inviso because jQuery fades in nd fades out on mouseover event -->
 <!-- <div class="absolute"> -->
-<div class="row">
+<div id="no-margin-row"class="row">
   <div class="col-12">
   <p class="med-heading center glowtext pad-top">Take The First Step</p>
   </div>
   </div>
 
-  <div class="row">
+  <div id="no-margin-row"class="row">
   <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
 <a class="btn btn-outline-secondary mouseover-btn wt  hvr-grow " href="training.html">Explore Training</a>
 </div>
@@ -238,7 +245,7 @@ Meet Your New Trainer
    <p class = "form-intro">
      Go for it!
    </p>
-   <div class="row g-4 p-2 form-row">
+   <div id="no-margin-row" class="row g-4 p-2 form-row">
    <div class="col-12">
    <div class="form-floating ">
 <input type = "text" class="form-control" id="floatingInputValue" rows="8" name = "name" placeholder="Name"value = "Name" required = "required"></textarea>
